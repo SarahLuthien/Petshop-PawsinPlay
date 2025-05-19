@@ -1,0 +1,60 @@
+.shop {
+  display: flex;
+  background: var(--white);
+}
+
+.title-container {
+  display: flex;
+  padding: 2rem 1rem 0 1rem;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.title-section {
+  display: flex;
+  justify-content: start;
+  gap: 1rem;
+}
+
+.icon-dog {
+  width: 20px;
+  height: 20px;
+}
+
+.title-container > .icon-lupa {
+  display: flex;
+  justify-self: end;
+  width: 20px;
+  height: 20px;
+}
+
+.title {
+  color: var(--secondary-color);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+  text-align: left;
+  align-self: center;
+  margin: 0;
+}
+
+.container-products {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.title-products {
+  padding: 2rem 2rem 1rem 2rem;
+  margin: 0;
+}
+
+.nav-products {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 1rem 1rem 0 1rem;
+  margin: 0;
+}

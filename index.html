@@ -3,7 +3,92 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="shortcut icon" href="assets/icons/fluent-emoji-flat_paw-prints.png" type="image/x-icon">
+    
+
+    <title>Paws n&#x27 Play</title>
+
+    <!-- Estilo principal e por seção -->
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/header-hero.css">
+    <link rel="stylesheet" href="/styles/shop_section.css">
+    <link rel="stylesheet" href="/styles/services_section.css">
+    <link rel="stylesheet" href="/styles/about.css">
+    <link rel="stylesheet" href="/styles/blog_section.css">
+    <link rel="stylesheet" href="/styles/section_team.css">
+    <link rel="stylesheet" href="/styles/contact_section.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+
   </head>
-  <body></body>
+  
+  <body>
+
+    <!-- Cabeçalho  -->
+    <header class="main-header">
+
+      <!-- Logotipo -->
+      <div class="logo">
+        <img src="./assets/icons/fluent-emoji-flat_paw-prints.png" alt="logo de patinhas de cachorro">
+        <h1 class="logo_title">Paws n' Play</h1>
+      </div>
+
+       <!-- Container do Menu  -->
+      <div class="menu-nav">
+
+         <!-- Botão Hamburguer  -->
+      <button id="menuButton" class="menu-hamburguer" aria-label="Abrir Menu">
+        <span class="line line-top"></span>
+        <span class="line line-middle"></span>
+        <span class="line line-bottom"></span>
+      </button>
+
+     <!-- Menu de Navegação -->
+      <nav aria-label="Menu de Navegação">
+        <ul id="menu" class="nav-menu">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      
+      </div>
+    </header>
+
+    <!-- Hero  -->
+<section class="hero" >
+  <div class="hero-content">
+    <h2>Pawsitively Perfect: Where Every Pet's Dream Comes True!</h2>
+    <p>Welcome to Paws n’ Play, the ultimate destination for pet lovers! Explore a world of tail-wagging joy and furry companionship with our wide range of products and services. 
+      From pampering essentials to playful toys, we're here to make every moment with your pet pawsitively perfect!"</p>
+    <div class="hero-container-btn">
+      <button class="hero-btn">Shop Now <img src="./assets/icons/fluent-emoji-flat_paw-prints.png" alt="logo de patinhas de cachorro" ></button>
+    </div>
+  </div>
+</section>
+
+    <!-- Shop  -->
+  <div class="title-container">
+    <div class="title-section">
+      <img class="icon-dog" src="/assets/icons/patas-black.png" alt="patas de cachorro">
+      <h3 class="title">Shop</h3>
+    </div>
+      <img class="icon-lupa" src="/assets/icons/lupa.png" alt="lupa">
+  </div>
+       <div class="container-products">
+        <h3 class="title-products">Featured Products</h3>
+        <ul class="nav-products">
+          <button id="">Random</button>
+          <button id="">Cat</button >
+          <button id="">Dogs</button >
+          <button id="">Fish</button >
+          <button id="">Birds</button >
+        </ul>
+       </div>
+     
+
+    <script type="module" src="./dist/main.js"></script>
+  </body>
 </html>

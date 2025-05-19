@@ -1,0 +1,82 @@
+/* Reset */
+
+body {
+  font-size: 100%;
+  list-style-type: none;
+  font-family: "Formative Trial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Fonts Import  */
+
+/* Light - 300 */
+@font-face {
+  font-family: "Formative Trial";
+  src: url("/assets/fonts/Formative Trial Light/Formative Trial Light.woff2")
+    format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Regular - 400 */
+@font-face {
+  font-family: "Formative Trial";
+  src: url("/assets/fonts/Formative Trial Book/Formative Trial Book.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Medium - 500 */
+@font-face {
+  font-family: "Formative Trial";
+  src: url("/assets/fonts/Formative Trial Medium/Formative Trial Medium.woff2")
+    format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Semi-Bold - 600 */
+@font-face {
+  font-family: "Formative Trial";
+  src: url("/assets/fonts/Formative Trial Semi-Bold/Formative Trial Semi-Bold.woff2")
+    format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Bold - 700 */
+@font-face {
+  font-family: "Formative Trial";
+  src: url("/assets/fonts/Formative Trial Bold/Formative Trial Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Variáveis de cores e espaçamento */
+
+:root {
+  /* Cores principais */
+  --primary-color: #003049;
+  --secondary-color: #101828;
+  --white: #ffffff;
+  --light-gray: #f5f5f5;
+  --medium-gray: #000000b2;
+  --dark-gray: #666;
+  --black: #000000;
+
+  /* Sombras */
+  --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Botão */
+.btn {
+  display: inline-block;
+  border: none;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(88.9deg, #243961 -2.52%, #101828 99.06%);
+}
