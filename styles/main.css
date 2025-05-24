@@ -1,11 +1,59 @@
 /* Reset */
 
-body {
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
   font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
   list-style-type: none;
   font-family: "Formative Trial", sans-serif;
   font-weight: 400;
   font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--white);
+  width: 100%;
 }
 
 /* Fonts Import  */
@@ -55,28 +103,21 @@ body {
   font-style: normal;
 }
 
-/* Variáveis de cores e espaçamento */
+/* Variáveis de cores */
 
 :root {
   /* Cores principais */
   --primary-color: #003049;
   --secondary-color: #101828;
   --white: #ffffff;
-  --light-gray: #f5f5f5;
-  --medium-gray: #000000b2;
-  --dark-gray: #666;
-  --black: #000000;
+  --gray-very-light: #f5f5f5;
+  --gray-light: #f4f4f4;
+  --black: rgba(0, 0, 0, 1);
+  --produto-texto: rgba(0, 0, 0, 0.7);
+  --background-button: linear-gradient(62deg, #101828 0%, #233250 100%);
+  --background-border-color: rgba(16, 24, 40, 0.151);
 
   /* Sombras */
-  --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Botão */
-.btn {
-  display: inline-block;
-  border: none;
-  text-decoration: none;
-  font-weight: 600;
-  cursor: pointer;
-  background: linear-gradient(88.9deg, #243961 -2.52%, #101828 99.06%);
+  --box-shadow-button: 5px 4px 4px rgba(0, 0, 0, 0.25);
+  --box-shadow-inset-button: 0 0 8px 4px rgba(0, 0, 0, 0.25) inset;
 }

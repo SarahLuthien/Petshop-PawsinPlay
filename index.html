@@ -1,94 +1,153 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="assets/icons/fluent-emoji-flat_paw-prints.png" type="image/x-icon">
-    
 
-    <title>Paws n&#x27 Play</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="assets/icons/patinhas_icon.svg" type="image/x-icon">
 
-    <!-- Estilo principal e por seção -->
-    <link rel="stylesheet" href="/styles/main.css">
-    <link rel="stylesheet" href="/styles/header-hero.css">
-    <link rel="stylesheet" href="/styles/shop_section.css">
-    <link rel="stylesheet" href="/styles/services_section.css">
-    <link rel="stylesheet" href="/styles/about.css">
-    <link rel="stylesheet" href="/styles/blog_section.css">
-    <link rel="stylesheet" href="/styles/section_team.css">
-    <link rel="stylesheet" href="/styles/contact_section.css">
-    <link rel="stylesheet" href="/styles/footer.css">
 
-  </head>
-  
-  <body>
+  <title>Paws n&#x27 Play</title>
 
+  <!-- Estilo principal e por seção -->
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="/styles/header-hero.css">
+  <link rel="stylesheet" href="/styles/shop_section.css">
+  <link rel="stylesheet" href="/styles/services_section.css">
+  <link rel="stylesheet" href="/styles/about.css">
+  <link rel="stylesheet" href="/styles/blog_section.css">
+  <link rel="stylesheet" href="/styles/section_team.css">
+  <link rel="stylesheet" href="/styles/contact_section.css">
+  <link rel="stylesheet" href="/styles/footer.css">
+
+</head>
+
+<body>
+
+  <section class="main-header-hero">
     <!-- Cabeçalho  -->
-    <header class="main-header">
-
-      <!-- Logotipo -->
+    <header class="main-header" id="navbar">
       <div class="logo">
-        <img src="./assets/icons/fluent-emoji-flat_paw-prints.png" alt="logo de patinhas de cachorro">
+        <img src="./assets/icons/patinhas_icon.svg" alt="logo de patinhas de cachorro">
         <h1 class="logo_title">Paws n' Play</h1>
       </div>
 
-       <!-- Container do Menu  -->
-      <div class="menu-nav">
+      <!-- Container do Menu  -->
+      <div class="container-nav">
+        <!-- Botão Hamburguer  -->
+        <button id="menuButton" class="menu-hamburguer" aria-label="Abrir Menu">
+          <span class="line line-top"></span>
+          <span class="line line-middle"></span>
+          <span class="line line-bottom"></span>
+        </button>
 
-         <!-- Botão Hamburguer  -->
-      <button id="menuButton" class="menu-hamburguer" aria-label="Abrir Menu">
-        <span class="line line-top"></span>
-        <span class="line line-middle"></span>
-        <span class="line line-bottom"></span>
-      </button>
+        <!-- Menu de Navegação -->
+        <nav aria-label="Menu de Navegação">
+          <ul id="menu" class="nav-menu">
+            <li class="mobile-only"><a href="#inicio">Início</a></li>
 
-     <!-- Menu de Navegação -->
-      <nav aria-label="Menu de Navegação">
-        <ul id="menu" class="nav-menu">
-          <li><a href="#inicio">Início</a></li>
-          <li><a href="#shop">Shop</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      
+            <li class="dropdown">
+              <a href="#shop">Shop
+                <img class="dropdown-arrow" src="./assets/icons/dropdown-icon.svg" alt="seta de navegação">
+              </a>
+              <ul class="submenu">
+                <li><a href="#random">Random</a></li>
+                <li><a href="#cats">Cats</a></li>
+                <li><a href="#dogs">Dogs</a></li>
+                <li><a href="#fish">Fish</a></li>
+                <li><a href="#birds">Birds</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#services">Services
+                <img class="dropdown-arrow" src="./assets/icons/dropdown-icon.svg" alt="seta de navegação">
+              </a>
+              <ul class="submenu">
+                <li><a href="#services1">Grooming</a></li>
+                <li><a href="#services2">Boarding</a></li>
+                <li><a href="#services3">Veterinary</a></li>
+                <li><a href="#services4">Training</a></li>
+                <li><a href="#services5">Adoption</a></li>
+              </ul>
+            </li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- Botão Extra Desktop -->
+        <div class="conatiner-desktop-extra-btn">
+          <button class="desktop-extra-btn">Get Started</button>
+        </div>
       </div>
     </header>
 
-    <!-- Hero  -->
-<section class="hero" >
-  <div class="hero-content">
-    <h2>Pawsitively Perfect: Where Every Pet's Dream Comes True!</h2>
-    <p>Welcome to Paws n’ Play, the ultimate destination for pet lovers! Explore a world of tail-wagging joy and furry companionship with our wide range of products and services. 
-      From pampering essentials to playful toys, we're here to make every moment with your pet pawsitively perfect!"</p>
-    <div class="hero-container-btn">
-      <button class="hero-btn">Shop Now <img src="./assets/icons/fluent-emoji-flat_paw-prints.png" alt="logo de patinhas de cachorro" ></button>
+    <!--  Hero  -->
+    <div class="hero" id="#inicio">
+      <div class="hero-content">
+        <h2>Pawsitively Perfect: Where Every Pet's Dream Comes True!</h2>
+        <p>Welcome to Paws n’ Play, the ultimate destination for pet lovers! Explore a world of tail-wagging joy and
+          furry companionship with our wide range of products and services.
+          From pampering essentials to playful toys, we're here to make every moment with your pet pawsitively perfect!"
+        </p>
+      </div>
+      <div class="hero-container-btn">
+        <button class="hero-btn">Shop Now <img src="./assets/icons/patinhas_icon.svg"
+            alt="logo de patinhas de cachorro"></button>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-    <!-- Shop  -->
-  <div class="title-container">
-    <div class="title-section">
-      <img class="icon-dog" src="/assets/icons/patas-black.png" alt="patas de cachorro">
-      <h3 class="title">Shop</h3>
+  <!-- Sessão Shop  -->
+  <section class="shop-section">
+    <div class="header">
+      <div class="title-container">
+        <img class="icon-dog" src="/assets/icons/patinhas-black_icon.svg" alt="patas de cachorro">
+        <h2 class="title-section">Shop</h2>
+      </div>
+      <!-- Barra de pesquisa  Mobile -->
+      <form class="shop-search-form-mobile" role="search">
+        <input class="shop-search-input" type="text">
+        <button type="submit" id="searchButton" aria-label="Pesquisar">
+          <img class="shop-search-icon" src="/assets/icons/lupa_icon.svg" alt="Ícone de lupa">
+        </button>
+      </form>
     </div>
-      <img class="icon-lupa" src="/assets/icons/lupa.png" alt="lupa">
-  </div>
-       <div class="container-products">
+    </div>
+
+    <!-- Barra de pesquisa e container de Products para Desktop -->
+    <div class="products-container">
+      <div class="products-container-search">
         <h3 class="title-products">Featured Products</h3>
-        <ul class="nav-products">
-          <button id="">Random</button>
-          <button id="">Cat</button >
-          <button id="">Dogs</button >
-          <button id="">Fish</button >
-          <button id="">Birds</button >
-        </ul>
-       </div>
-     
+        <form class="shop-search-form-desktop" role="search">
+          <div class="shop-search-wrapper">
+            <button type="submit" id="searchButton" class="shop-search-button" aria-label="Pesquisar">
+              <img class="shop-search-icon" src="/assets/icons/lupa_icon.svg" alt="Ícone de lupa" />
+            </button>
+            <input class="shop-search-input" type="text" placeholder="Search" aria-label="Search" />
+          </div>
+        </form>
+      </div>
 
-    <script type="module" src="./dist/main.js"></script>
-  </body>
+      <!-- Products -->
+      <div class="container-filter-products">
+        <div class="filter-products_buttons">
+          <button class="filter-btn" id="random">Random</button>
+          <button class="filter-btn" id="cats">Cat</button>
+          <button class="filter-btn" id="dogs">Dogs</button>
+          <button class="filter-btn" id="fish">Fish</button>
+          <button class="filter-btn" id="birds">Birds</button>
+        </div>
+        <div class="container-products-list"></div>
+        <div class="link-view-more"> <a href="" class="view-more">View More >>></a></div>
+  </section>
+
+
+  <!-- Sessão Services  -->
+  <section class="services-section"></section>
+
+
+  <script type="module" src="./dist/main.js"></script>
+</body>
+
 </html>
