@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
@@ -28,8 +28,11 @@
     <!-- Cabeçalho  -->
     <header class="main-header" id="navbar">
       <div class="logo">
-        <img src="./assets/icons/patinhas_icon.svg" alt="logo de patinhas de cachorro">
-        <h1 class="logo_title">Paws n' Play</h1>
+        <a href="#inicio">
+          <img src="./assets/icons/patinhas_icon.svg" alt="logo de patinhas de cachorro">
+          <h1 class="logo_title">Paws n' Play</h1>
+        </a>
+
       </div>
 
       <!-- Container do Menu  -->
@@ -51,11 +54,11 @@
                 <img class="dropdown-arrow" src="./assets/icons/dropdown-icon.svg" alt="seta de navegação">
               </a>
               <ul class="submenu">
-                <li><a href="#random">Random</a></li>
-                <li><a href="#cats">Cats</a></li>
-                <li><a href="#dogs">Dogs</a></li>
-                <li><a href="#fish">Fish</a></li>
-                <li><a href="#birds">Birds</a></li>
+                <li><a href="">Random</a></li>
+                <li><a href="">Cats</a></li>
+                <li><a href="">Dogs</a></li>
+                <li><a href="">Fish</a></li>
+                <li><a href="">Birds</a></li>
               </ul>
             </li>
             <li class="dropdown">
@@ -83,7 +86,7 @@
     </header>
 
     <!--  Hero  -->
-    <div class="hero" id="#inicio">
+    <div class="hero" id="inicio">
       <div class="hero-content">
         <h2>Pawsitively Perfect: Where Every Pet's Dream Comes True!</h2>
         <p>Welcome to Paws n’ Play, the ultimate destination for pet lovers! Explore a world of tail-wagging joy and
@@ -99,7 +102,7 @@
   </section>
 
   <!-- Sessão Shop  -->
-  <section class="shop-section">
+  <section class="shop-section" id="shop">
     <div class="header">
       <div class="title-container">
         <img class="icon-dog" src="/assets/icons/patinhas-black_icon.svg" alt="patas de cachorro">
@@ -108,7 +111,7 @@
       <!-- Barra de pesquisa  Mobile -->
       <form class="shop-search-form-mobile" role="search">
         <input class="shop-search-input" type="text">
-        <button type="submit" id="searchButton" aria-label="Pesquisar">
+        <button type="submit" aria-label="Pesquisar">
           <img class="shop-search-icon" src="/assets/icons/lupa_icon.svg" alt="Ícone de lupa">
         </button>
       </form>
@@ -121,7 +124,7 @@
         <h3 class="title-products">Featured Products</h3>
         <form class="shop-search-form-desktop" role="search">
           <div class="shop-search-wrapper">
-            <button type="submit" id="searchButton" class="shop-search-button" aria-label="Pesquisar">
+            <button type="submit" class="shop-search-button" aria-label="Pesquisar">
               <img class="shop-search-icon" src="/assets/icons/lupa_icon.svg" alt="Ícone de lupa" />
             </button>
             <input class="shop-search-input" type="text" placeholder="Search" aria-label="Search" />
@@ -144,7 +147,82 @@
 
 
   <!-- Sessão Services  -->
-  <section class="services-section"></section>
+  <section class="services-section" id="services">
+    <div class="header">
+      <div class="title-container">
+        <img class="icon-dog" src="/assets/icons/patinhas-black_icon.svg" alt="patas de cachorro">
+        <h2 class="title-section">Services</h2>
+      </div>
+    </div>
+    <!-- Services container -->
+    <div class="services-container">
+      <div class="featured-services">
+        <div class="service-card">
+          <img src="./assets/services/grooming.jpg" alt="Grooming">
+          <h3>Grooming</h3>
+          <div class="hover-reveal-content">
+            <p class="descrition-service">
+              Lorem ipsum dolor sit amet consectetur.
+              Vitae donec pellentesque ut eget tempor egestas diam.
+              Donec pellentesque ut eget tempor egestas diam.
+              Dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.
+              Donec pellentesque ut eget tempor egestas diam.</p>
+            <a href="#" class="btn-learn-more">Learn more</a>
+          </div>
+
+        </div>
+        <div class="service-card">
+          <img src="./assets/services/boarding.jpg" alt="Boarding">
+          <h3>Boarding</h3>
+          <div class="hover-reveal-content">
+            <p class="descrition-service">
+              Lorem ipsum dolor sit amet consectetur.
+              Vitae donec pellentesque ut eget tempor egestas diam.
+              Donec pellentesque ut eget tempor egestas diam.
+              Dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.
+              Donec pellentesque ut eget tempor egestas diam.</p>
+            <a href="#" class="btn-learn-more">Learn more</a>
+          </div>
+
+        </div>
+        <div class="service-card service-card--tall">
+          <picture>
+            <source class="adoption-image-desktop" media="(min-width: 1440px)" srcset="./assets/services/adoption.jpg">
+
+            <img class="adoption-image" src="./assets/services/adoption-mobile.jpg" alt="Adoption">
+          </picture>
+          <h3>Adoption</h3>
+        </div>
+        <div class="service-card">
+          <img src="./assets/services/veterinary.jpg" alt="Veterinary">
+          <h3>Veterinary</h3>
+          <div class="hover-reveal-content">
+            <p class="descrition-service">
+              Lorem ipsum dolor sit amet consectetur.
+              Vitae donec pellentesque ut eget tempor egestas diam.
+              Donec pellentesque ut eget tempor egestas diam.
+              Dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.
+              Donec pellentesque ut eget tempor egestas diam.</p>
+            <a href="#" class="btn-learn-more">Learn more</a>
+          </div>
+        </div>
+        <div class="service-card">
+          <img src="./assets/services/training.jpg" alt="Training">
+          <h3>Training</h3>
+          <div class="hover-reveal-content">
+            <p class="descrition-service">
+              Lorem ipsum dolor sit amet consectetur.
+              Vitae donec pellentesque ut eget tempor egestas diam.
+              Donec pellentesque ut eget tempor egestas diam.
+              Dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.
+              Donec pellentesque ut eget tempor egestas diam.</p>
+            <a href="#" class="btn-learn-more">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
 
 
   <script type="module" src="./dist/main.js"></script>

@@ -46,6 +46,8 @@ svg {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   list-style-type: none;
   font-family: "Formative Trial", sans-serif;
   font-weight: 400;

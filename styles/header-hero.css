@@ -1,5 +1,6 @@
 /* Main Header-Hero */
 .main-header-hero {
+  order: 1;
   background-size: 1100px;
   height: 609px;
   background-repeat: no-repeat;
@@ -14,7 +15,6 @@
 }
 
 /* Header  */
-
 .main-header {
   display: flex;
   height: 80px;
@@ -29,18 +29,25 @@
   position: fixed;
   top: 0;
   width: 100%;
+  height: auto;
   background-color: #01254d;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   z-index: 1000;
+  padding-bottom: 8px;
 }
 
 /* Logotipo  */
 .logo {
   display: flex;
-  align-items: center;
   justify-content: start;
-  gap: 11px;
   padding: 28px 0px 0px 15px;
+}
+
+.logo a {
+  display: flex;
+  flex-direction: row;
+  gap: 11px;
+  align-items: center;
 }
 
 .logo img {
@@ -171,7 +178,7 @@ h1 {
   line-height: 16.8px;
   letter-spacing: 0%;
   color: var(--white);
-  padding-bottom: 50px;
+  padding-bottom: 60px;
 }
 
 .hero-container-btn {

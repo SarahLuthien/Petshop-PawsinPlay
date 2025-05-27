@@ -36,7 +36,7 @@ const products: Product[] = [
     id: "1",
     name: "Cat Food",
     category: "cats",
-    imageUrl: "./assets/products/cat-food.svg",
+    imageUrl: "./assets/products/cat-food.jpg",
     price: "15,000.00",
     description:
       "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.",
@@ -45,7 +45,7 @@ const products: Product[] = [
     id: "2",
     name: "Multivitamin For Cat",
     category: "cats",
-    imageUrl: "./assets/products/multi-cat.svg",
+    imageUrl: "./assets/products/multi-cat.jpg",
     price: "15,000.00",
     description:
       "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.",
@@ -54,7 +54,7 @@ const products: Product[] = [
     id: "3",
     name: "Dog Food",
     category: "dogs",
-    imageUrl: "./assets/products/dog-food.svg",
+    imageUrl: "./assets/products/dog-food.jpg",
     price: "15,000.00",
     description:
       "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.",
@@ -63,7 +63,7 @@ const products: Product[] = [
     id: "4",
     name: "Pet Plate",
     category: "dogs",
-    imageUrl: "./assets/products/pet-plate.svg",
+    imageUrl: "./assets/products/pet-plate.jpg",
     price: "15,000.00",
     description:
       "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.",
@@ -72,7 +72,7 @@ const products: Product[] = [
     id: "5",
     name: "Dog Water",
     category: "dogs",
-    imageUrl: "./assets/products/dog-water.svg",
+    imageUrl: "./assets/products/dog-water.jpg",
     price: "15,000.00",
     description:
       "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.",
@@ -89,7 +89,7 @@ const products: Product[] = [
     id: "7",
     name: "Bird Water",
     category: "birds",
-    imageUrl: "./assets/products/bird-water.svg",
+    imageUrl: "./assets/products/bird-water.jpg",
     price: "15,000.00",
     description:
       "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.",

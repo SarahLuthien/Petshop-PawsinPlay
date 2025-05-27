@@ -1,5 +1,6 @@
 /* Container Shop */
 .shop-section {
+  order: 2;
   display: flex;
   background: var(--white);
   padding: 40px 16px 40px 16px;
@@ -10,7 +11,6 @@
 }
 
 /* Title Section*/
-
 .header {
   display: flex;
   position: relative;
@@ -55,6 +55,7 @@
   justify-self: end;
   width: 24px;
   height: 24px;
+  align-self: center;
 }
 
 /* Section Products */
@@ -142,7 +143,7 @@
   flex-wrap: wrap;
   flex-direction: column;
   gap: 17px;
-  justify-content: center;
+  align-items: center;
 }
 
 .product-card {
@@ -288,6 +289,10 @@
   padding: 7px 14px 7px 14px;
 }
 
+.link-view-more {
+  display: none;
+}
+
 /* Estados especiais */
 .product-card.out-of-stock {
   background: var(--gray-very-light) !important;
@@ -305,7 +310,7 @@
 }
 
 @media (min-width: 600px) and (max-width: 1439px) {
-  .main-header-hero {
+  .shop-section {
     height: 700px;
     width: auto;
     background-size: cover;
@@ -358,7 +363,7 @@
     overflow: hidden;
     outline: 0.2px var(--background-border-color) solid;
     outline-offset: -0.2px;
-    margin-left: 40px;
+    margin-left: 60px;
     padding: 40px 21px 40px 21px;
   }
 
