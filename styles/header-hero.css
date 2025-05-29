@@ -220,8 +220,8 @@ h1 {
   /* Header  */
   .main-header-hero {
     max-width: 1440px;
-    background-size: 2033px;
-    height: 900px;
+    background-size: 2030px;
+    height: 895px;
     background-repeat: no-repeat;
     background-position: 0% 35%;
     background-image: radial-gradient(
@@ -359,7 +359,7 @@ h1 {
   /* Hero */
 
   .hero {
-    padding: 170px 0px 0px 80px;
+    padding: 170px 0px 0px 90px;
     gap: 30px;
   }
 

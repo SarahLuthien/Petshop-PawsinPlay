@@ -75,7 +75,6 @@
             </li>
             <li><a href="#about">About Us</a></li>
             <li><a href="#blog">Blog</a></li>
-            <li><a href="#team">Our Team</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
@@ -296,6 +295,7 @@
     <div class="blog-container">
       <div class="blog-content">
         <h3 class="blog-title">Milestone: 20,000 Pets Treated</h3>
+        <div class="blog-title-bottom"></div>
         <div class="blog-paragraph">
           <p>Eget quis mi enim, leo lacinia pharetra, semper.
             Eget in volutpat mollis at volutpat lectus velit, sed auctor.
@@ -395,14 +395,219 @@
             <a href=""><img src="/assets/team/icons/social-icon.svg" alt="icone"></a>
           </div>
         </li>
-
-
-
       </ul>
     </div>
+  </section>
+
+  <!-- Sessão Get in touch -->
+  <section class="contact-section" id="contact">
+    <div class="header-contact">
+      <div class="title-container">
+        <img class="icon-dog" src="/assets/icons/patinhas_icon.svg" alt="patas de cachorro">
+        <h2 class="title-section-contact">Get in touch</h2>
+      </div>
     </div>
 
-    <script type="module" src="./dist/main.js"></script>
+    <div class="contact-container">
+      <ul class="contact-container-list">
+        <li class="contact-item">
+          <div class="contact-social">
+            <div class="contact-info">
+              <img src="/assets/contact/mail-icon.svg" alt="icon email">
+              <h4>Email</h4>
+              <p>Our friendly team is here to help.</p>
+              <a href="mailto:hello@pawsnplay.com" class="contact-info__link">hello@pawsnplay.com</a>
+            </div>
+          </div>
+        </li>
+
+        <li class="contact-item">
+          <div class="contact-social">
+            <div class="contact-info">
+              <img src="/assets/contact/chat-icon.svg" alt="icon chat">
+              <h4>Live Chat</h4>
+              <p>Our friendly team is here to help.</p>
+              <a href="#" class="contact-info__action-button">Start new chat</a>
+            </div>
+          </div>
+        </li>
+
+        <li class="contact-item">
+          <div class="contact-social">
+            <div class="contact-info">
+              <img src="/assets/contact/map-icon.svg" alt="icon map">
+              <h4>Office</h4>
+              <p>Come say hello at our office HQ.</p>
+              <a href="#" class="contact-info__address">123, Yaya Abatan St, Ogba Lagos</a>
+            </div>
+          </div>
+        </li>
+
+        <li class="contact-item">
+          <div class="contact-social">
+            <div class="contact-info">
+              <img src="/assets/contact/phone-icon.svg" alt="icon phone">
+              <h4>Phone</h4>
+              <p>Mon-Fri from 8am to 5pm.</p>
+              <a href="tel:+234901234384" class="contact-info__link">+234 901234 384</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="contact-form-wrapper">
+        <form action="#" method="POST" class="contact-form">
+          <div class="contact-form-row">
+            <div class="contact-form-group contact-form__group--half">
+              <label for="first-name" class="contact-form__label">First name</label>
+              <input type="text" id="first-name" name="first_name" class="contact-form__input" placeholder="First name"
+                required>
+            </div>
+            <div class="contact-form__group contact-form__group--half">
+              <label for="last-name" class="contact-form__label">Last name</label>
+              <input type="text" id="last-name" name="last_name" class="contact-form__input" placeholder="Last name"
+                required>
+            </div>
+          </div>
+
+          <div class="contact-form__group">
+            <label for="email" class="contact-form__label">Email</label>
+            <input type="email" id="email" name="email" class="contact-form__input" placeholder="you@company.com"
+              required>
+          </div>
+
+          <div class="contact-form__group">
+            <label for="message" class="contact-form__label">Message</label>
+            <textarea id="message" name="message" rows="5" class="contact-form__textarea"
+              placeholder="Leave us a message..."></textarea>
+          </div>
+
+          <div class="contact-form__group contact-form__group--checkbox">
+            <input type="checkbox" id="privacy-policy" name="privacy_policy_agreement" class="contact-form__checkbox"
+              value="agreed" required>
+            <label for="privacy-policy" class="contact-form__checkbox-label">
+              You agree to our friendly <a href="/privacy-policy" class="contact-form__link">privacy policy</a>.
+            </label>
+          </div>
+
+          <button type="submit" class="contact-form__submit-button">Send message</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Sessão Footer -->
+  <footer class="footer-section">
+    <div class="footer-container">
+      <div class="footer-bottom-top"></div>
+      <section class="footer-newsletter">
+        <div class="footer-newsletter__content">
+          <h3 class="footer-newsletter__title">Join our newsletter</h3>
+          <p class="footer-newsletter__description">Be the first to receive latest updates on promo, sales and offers
+          </p>
+        </div>
+        <form class="footer-newsletter__form">
+          <input type="email" id="newsletter-email" class="footer-newsletter__input" placeholder="Enter your email"
+            required>
+          <button type="submit" class="footer-newsletter__button">Subscribe</button>
+        </form>
+      </section>
+
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a href="/" class="footer-brand__logo-link">
+            <img src="/assets/icons/patinhas_icon.svg" alt="" class="footer-brand__logo-icon" aria-hidden="true">
+            <span class="footer-brand__name">Paws n' Play</span>
+          </a>
+          <p class="footer-brand__tagline">Where wagging tails and purring hearts reign supreme!</p>
+        </div>
+
+        <nav class="footer-navigation">
+          <div class="footer-navigation__column">
+            <h4 class="footer-navigation__title">Shop</h4>
+            <ul class="footer-navigation__list">
+              <li><a href="#" class="footer-navigation__link">Pet Adoption</a></li>
+              <li><a href="#" class="footer-navigation__link">Nutrition</a></li>
+              <li><a href="#" class="footer-navigation__link">Pet Care</a></li>
+              <li><a href="#" class="footer-navigation__link">Pet Food</a></li>
+              <li><a href="#" class="footer-navigation__link">Pricing</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-navigation__column">
+            <h4 class="footer-navigation__title">Company</h4>
+            <ul class="footer-navigation__list">
+              <li><a href="#" class="footer-navigation__link">About us</a></li>
+              <li><a href="#" class="footer-navigation__link">Careers</a></li>
+              <li><a href="#" class="footer-navigation__link">Press</a></li>
+              <li><a href="#" class="footer-navigation__link">News</a></li>
+              <li><a href="#" class="footer-navigation__link">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-navigation__column">
+            <h4 class="footer-navigation__title">Services</h4>
+            <ul class="footer-navigation__list">
+              <li><a href="#" class="footer-navigation__link">Grooming</a></li>
+              <li><a href="#" class="footer-navigation__link">Boarding</a></li>
+              <li><a href="#" class="footer-navigation__link">Training</a></li>
+              <li><a href="#" class="footer-navigation__link">Veterinary</a></li>
+              <li><a href="#" class="footer-navigation__link">Support</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-navigation__column">
+            <h4 class="footer-navigation__title">Social</h4>
+            <ul class="footer-navigation__list">
+              <li><a href="#" class="footer-navigation__link">Twitter</a></li>
+              <li><a href="#" class="footer-navigation__link">LinkedIn</a></li>
+              <li><a href="#" class="footer-navigation__link">Facebook</a></li>
+              <li><a href="#" class="footer-navigation__link">AngelList</a></li>
+              <li><a href="#" class="footer-navigation__link">Dribbble</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-navigation__column">
+            <h4 class="footer-navigation__title">Legal</h4>
+            <ul class="footer-navigation__list">
+              <li><a href="#" class="footer-navigation__link">Terms</a></li>
+              <li><a href="#" class="footer-navigation__link">Privacy</a></li>
+              <li><a href="#" class="footer-navigation__link">Cookies</a></li>
+              <li><a href="#" class="footer-navigation__link">Licenses</a></li>
+              <li><a href="#" class="footer-navigation__link">Settings</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-bottom__copyright">&copy; 2024 Paws n' Play. All rights reserved.</p>
+        <div class="footer-bottom__social-icons">
+          <a href="#" class="footer-bottom__social-link" aria-label="Twitter">
+            <img src="/assets/footer/twitter.svg" alt="Twitter">
+          </a>
+          <a href="#" class="footer-bottom__social-link" aria-label="LinkedIn">
+            <img src="/assets/footer/linkedin.svg " alt="LinkedIn">
+          </a>
+          <a href="#" class="footer-bottom__social-link" aria-label="Facebook">
+            <img src="/assets/footer/face.svg" alt="Facebook">
+          </a>
+          <a href="#" class="footer-bottom__social-link" aria-label="GitHub">
+            <img src="/assets/footer/git.svg" alt="GitHub">
+          </a>
+          <a href="#" class="footer-bottom__social-link" aria-label="community">
+            <img src="/assets/footer/like.svg" alt="community">
+          </a>
+          <a href="#" class="footer-bottom__social-link" aria-label="Dribbble">
+            <img src="/assets/footer/dribble.svg" alt="Dribbble">
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script type="module" src="./dist/main.js"></script>
 </body>
 
 </html>

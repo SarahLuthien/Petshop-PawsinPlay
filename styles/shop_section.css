@@ -342,6 +342,7 @@
     width: 32px;
     height: 32px;
   }
+
   /*Desativa o container e form versão Mobile */
   .shop-search-form-mobile {
     display: none;
