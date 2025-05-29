@@ -121,19 +121,49 @@ function renderProducts(category) {
         .join("");
 }
 renderProducts("random");
-// Button Filter
+// Funcionalidade Button Filter
 document.querySelectorAll(".filter-btn").forEach((btn) => {
     btn.addEventListener("click", () => {
         const category = btn.id;
         renderProducts(category);
     });
 });
-/* Adiciona e remove efeito Active nos buttons filter Products */
+// Adiciona e remove efeito de Ativo nos buttons: filter-Products
 const buttons = document.querySelectorAll(".filter-btn");
 buttons.forEach((btn) => {
     btn.addEventListener("click", () => {
         buttons.forEach((b) => b.classList.remove("active"));
         btn.classList.add("active");
     });
+});
+document.addEventListener("DOMContentLoaded", function () {
+    function setupCustomVideoPlayer(blogVideo, blogCustomPlayButton) {
+        const videoElement = document.getElementById(blogVideo);
+        const playButtonElement = document.getElementById(blogCustomPlayButton);
+        if (videoElement && playButtonElement) {
+            videoElement.removeAttribute("controls");
+            playButtonElement.style.display = "block";
+            playButtonElement.addEventListener("click", function () {
+                videoElement.play();
+                playButtonElement.style.display = "none";
+                videoElement.setAttribute("controls", "true");
+            });
+            // Display volta ao visual e configuração inicial ao finalizar
+            videoElement.addEventListener("ended", function () {
+                playButtonElement.style.display = "block";
+                videoElement.removeAttribute("controls");
+                videoElement.load();
+            });
+        }
+        else {
+            if (!videoElement) {
+                console.warn(`Elemento de vídeo com ID '${blogVideo}' não encontrado.`);
+            }
+            if (!playButtonElement) {
+                console.warn(`Botão de play com ID '${blogCustomPlayButton}' não encontrado.`);
+            }
+        }
+    }
+    setupCustomVideoPlayer("blogVideo", "blogCustomPlayButton");
 });
 //# sourceMappingURL=main.js.map

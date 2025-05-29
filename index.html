@@ -75,6 +75,7 @@
             </li>
             <li><a href="#about">About Us</a></li>
             <li><a href="#blog">Blog</a></li>
+            <li><a href="#team">Our Team</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
@@ -119,7 +120,7 @@
     </div>
 
     <!-- Barra de pesquisa e container de Products para Desktop -->
-    <div class="products-container">
+    <div class="shop-container">
       <div class="products-container-search">
         <h3 class="title-products">Featured Products</h3>
         <form class="shop-search-form-desktop" role="search">
@@ -142,7 +143,7 @@
           <button class="filter-btn" id="birds">Birds</button>
         </div>
         <div class="container-products-list"></div>
-        <div class="link-view-more"> <a href="" class="view-more">View More >>></a></div>
+        <div class="link-view-more"> <a href="#" class="view-more">View More >>></a></div>
   </section>
 
 
@@ -154,10 +155,12 @@
         <h2 class="title-section">Services</h2>
       </div>
     </div>
+
     <!-- Services container -->
     <div class="services-container">
       <div class="featured-services">
-        <div class="service-card">
+
+        <div class="service-card" id="services1">
           <img src="./assets/services/grooming.jpg" alt="Grooming">
           <h3>Grooming</h3>
           <div class="hover-reveal-content">
@@ -169,9 +172,9 @@
               Donec pellentesque ut eget tempor egestas diam.</p>
             <a href="#" class="btn-learn-more">Learn more</a>
           </div>
-
         </div>
-        <div class="service-card">
+
+        <div class="service-card" id="services2">
           <img src="./assets/services/boarding.jpg" alt="Boarding">
           <h3>Boarding</h3>
           <div class="hover-reveal-content">
@@ -183,17 +186,17 @@
               Donec pellentesque ut eget tempor egestas diam.</p>
             <a href="#" class="btn-learn-more">Learn more</a>
           </div>
-
         </div>
-        <div class="service-card service-card--tall">
+
+        <div class="service-card service-card--tall" id="services5">
           <picture>
             <source class="adoption-image-desktop" media="(min-width: 1440px)" srcset="./assets/services/adoption.jpg">
-
             <img class="adoption-image" src="./assets/services/adoption-mobile.jpg" alt="Adoption">
           </picture>
           <h3>Adoption</h3>
         </div>
-        <div class="service-card">
+
+        <div id="services3" class="service-card">
           <img src="./assets/services/veterinary.jpg" alt="Veterinary">
           <h3>Veterinary</h3>
           <div class="hover-reveal-content">
@@ -206,7 +209,8 @@
             <a href="#" class="btn-learn-more">Learn more</a>
           </div>
         </div>
-        <div class="service-card">
+
+        <div class="service-card" id="services4">
           <img src="./assets/services/training.jpg" alt="Training">
           <h3>Training</h3>
           <div class="hover-reveal-content">
@@ -219,13 +223,186 @@
             <a href="#" class="btn-learn-more">Learn more</a>
           </div>
         </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Sessão About  -->
+  <section class="about-section" id="about">
+    <div class="header">
+      <div class="title-container">
+        <img class="icon-dog" src="/assets/icons/patinhas-black_icon.svg" alt="patas de cachorro">
+        <h2 class="title-section">About Us</h2>
       </div>
     </div>
 
+    <div class="about-container">
+      <div class="about-description">
+        <p class="about-paragraph">
+          At Paws n’ Play, our journey began with a simple yet profound love for animals.
+          Inspired by the unwavering
+          companionship and joy they bring to our lives, we embarked on a mission to create
+          a haven where pets and
+          their owners alike could experience unparalleled happiness and care.
+        </p>
+        <p class="about-paragraph">
+          Driven by our passion for animal welfare, we hand-select each product and service
+          with meticulous attention
+          to quality and sustainability. From nutritious food and enriching toys to expert
+          grooming and healthcare,
+          every offering is carefully curated to meet the unique needs of our beloved furry
+          friends.
+        </p>
+        <p class="about-paragraph">
+          But our commitment doesn't end there. We're dedicated to fostering a community that
+          celebrates the bond
+          between pets and their human companions. Through educational resources, compassionate
+          support, and memorable
+          experiences, we strive to empower pet owners to provide the best possible care for their
+          furry family
+          members.
+        </p>
+        <p class="about-paragraph">
+          At Paws n’ Play, customer satisfaction isn't just a goal – it's our guiding
+          principle. We go above and
+          beyond to ensure every interaction leaves tails wagging and hearts smiling. From
+          personalized
+          recommendations to attentive service, we're here to make your journey with your pet as
+          joyful and fulfilling
+          as possible.
+        </p>
+        <p class="about-paragraph">
+          Join us in our mission to create a world where every pet is cherished, every need is
+          met, and every tail
+          wags with happiness. Welcome to Paws n’ Play, where pets are family, and love knows no
+          bounds.
+        </p>
+
+      </div>
+      <img class="about-img" src="/assets/images/about-content.PNG" alt="imagem de dois gatos">
+    </div>
   </section>
 
+  <!-- Sessão Blog -->
+  <section class="blog-section" id="blog">
+    <div class="header">
+      <div class="title-container">
+        <img class="icon-dog" src="/assets/icons/patinhas-black_icon.svg" alt="patas de cachorro">
+        <h2 class="title-section">Blog</h2>
+      </div>
+    </div>
 
-  <script type="module" src="./dist/main.js"></script>
+    <div class="blog-container">
+      <div class="blog-content">
+        <h3 class="blog-title">Milestone: 20,000 Pets Treated</h3>
+        <div class="blog-paragraph">
+          <p>Eget quis mi enim, leo lacinia pharetra, semper.
+            Eget in volutpat mollis at volutpat lectus velit, sed auctor.
+            Porttitor fames arcu quis fusce augue enim. Quis at habitant diam at.
+            Suscipit tristique risus, at donec. In turpis vel et quam imperdiet.
+            Ipsum molestie aliquet sodales id est ac volutpat. Eget quis mi enim, leo lacinia pharetra, semper.
+            Eget in volutpat mollis at volutpat lectus velit, sed auctor.
+            Porttitor fames arcu quis fusce augue enim. Quis at habitant diam at.
+            Suscipit tristique risus, at donec. In turpis vel et quam imperdiet.
+            Ipsum molestie aliquet sodales id est ac volutpat.
+          </p>
+        </div>
+        <div class="blog-subparagraph">
+          <h4 class="blog-subtitle">Renewed target</h4>
+          <p>
+            Pharetra morbi libero id aliquam elit massa integer tellus.
+            Quis felis aliquam ullamcorper porttitor.
+            Pulvinar ullamcorper sit dictumst ut eget a, elementum eu.
+            Maecenas est morbi mattis id in ac.
+          </p>
+
+        </div>
+        <div class="blog-button">
+          <button>Read more</button>
+        </div>
+      </div>
+
+      <div class="video-player-wrapper">
+        <video id="blogVideo" class="blog-video" poster="/assets/images/capa-video.png" preload="metadata">
+          <source src="/assets/videos/video-dog.mp4" type="video/mp4">
+          Lamentamos, mas seu navegador não suporta a reprodução deste vídeo.
+        </video>
+        <button id="blogCustomPlayButton" class="custom-play-button" aria-label="Play Video">
+          <svg width="164" height="164" viewBox="0 0 164 164" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M64.9165 106.49V57.5091C64.9175 56.8963 65.0834 56.295 65.3966 55.7683C65.7099 55.2416 66.1591 54.8088 66.6971 54.5153C67.2351 54.2219 67.8421 54.0785 68.4546 54.1003C69.067 54.1221 69.6624 54.3082 70.1782 54.6391L108.281 79.123C108.763 79.4321 109.16 79.8576 109.435 80.3603C109.71 80.863 109.854 81.4268 109.854 81.9998C109.854 82.5728 109.71 83.1366 109.435 83.6393C109.16 84.142 108.763 84.5675 108.281 84.8766L70.1782 109.367C69.6624 109.698 69.067 109.884 68.4546 109.906C67.8421 109.928 67.2351 109.785 66.6971 109.491C66.1591 109.198 65.7099 108.765 65.3966 108.238C65.0834 107.711 64.9175 107.11 64.9165 106.497V106.49Z"
+              fill="#E2E2E2" />
+            <path
+              d="M6.8335 82.0002C6.8335 40.4877 40.4877 6.8335 82.0002 6.8335C123.513 6.8335 157.167 40.4877 157.167 82.0002C157.167 123.513 123.513 157.167 82.0002 157.167C40.4877 157.167 6.8335 123.513 6.8335 82.0002ZM82.0002 17.0835C64.7832 17.0835 48.2714 23.9229 36.0971 36.0971C23.9229 48.2714 17.0835 64.7832 17.0835 82.0002C17.0835 99.2171 23.9229 115.729 36.0971 127.903C48.2714 140.077 64.7832 146.917 82.0002 146.917C99.2171 146.917 115.729 140.077 127.903 127.903C140.077 115.729 146.917 99.2171 146.917 82.0002C146.917 64.7832 140.077 48.2714 127.903 36.0971C115.729 23.9229 99.2171 17.0835 82.0002 17.0835Z"
+              fill="#E2E2E2" />
+          </svg>
+        </button>
+      </div>
+  </section>
+
+  <!-- Sessão Our Team -->
+  <section class="team-section" id="team">
+    <div class="header">
+      <div class="title-container">
+        <img class="icon-dog" src="/assets/icons/patinhas-black_icon.svg" alt="patas de cachorro">
+        <h2 class="title-section">Our Team</h2>
+      </div>
+    </div>
+
+    <div class="team-container">
+      <ul class="team-member-list">
+        <li class="team-member-item">
+          <img src="/assets/team/images/team-1.png" alt="Dr. Olivia Rhye" class="team-member-photo">
+          <h3 class="team-member-name">Dr. Olivia Rhye</h3>
+          <p class="team-member-function">Senior Veterinarian</p>
+          <div class="team-member-social">
+            <a href=""><img src="/assets/team/icons/twitter.svg" alt="icone do link twitter"></a>
+            <a href=""><img src="/assets/team/icons/instagran.svg" alt="icone do link instagram"></a>
+            <a href=""><img src="/assets/team/icons/social-icon.svg" alt="icone"></a>
+          </div>
+        </li>
+
+        <li class="team-member-item">
+          <img src="/assets/team/images/team-2.png" alt="Phoenix Baker" class="team-member-photo">
+          <h3 class="team-member-name">Phoenix Baker</h3>
+          <p class="team-member-function">Asst. Veterinarian</p>
+          <div class="team-member-social">
+            <a href=""><img src="/assets/team/icons/twitter.svg" alt="icone do link twitter"></a>
+            <a href=""><img src="/assets/team/icons/instagran.svg" alt="icone do link instagram"></a>
+            <a href=""><img src="/assets/team/icons/social-icon.svg" alt="icone"></a>
+          </div>
+        </li>
+
+        <li class="team-member-item">
+          <img src="/assets/team/images/team-3.png" alt="Lana Steiner" class="team-member-photo">
+          <h3 class="team-member-name">Lana Steiner</h3>
+          <p class="team-member-function">Resident Veterinarian</p>
+          <div class="team-member-social">
+            <a href=""><img src="/assets/team/icons/twitter.svg" alt="icone do link twitter"></a>
+            <a href=""><img src="/assets/team/icons/instagran.svg" alt="icone do link instagram"></a>
+            <a href=""><img src="/assets/team/icons/social-icon.svg" alt="icone"></a>
+          </div>
+        </li>
+
+        <li class="team-member-item">
+          <img src="/assets/team/images/team-4.png" alt="Lana Steiner" class="team-member-photo">
+          <h3 class="team-member-name">Demi Wilkinson</h3>
+          <p class="team-member-function">Intern Veterinarian</p>
+          <div class="team-member-social">
+            <a href=""><img src="/assets/team/icons/twitter.svg" alt="icone do link twitter"></a>
+            <a href=""><img src="/assets/team/icons/instagran.svg" alt="icone do link instagram"></a>
+            <a href=""><img src="/assets/team/icons/social-icon.svg" alt="icone"></a>
+          </div>
+        </li>
+
+
+
+      </ul>
+    </div>
+    </div>
+
+    <script type="module" src="./dist/main.js"></script>
 </body>
 
 </html>

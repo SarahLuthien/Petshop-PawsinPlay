@@ -1,0 +1,227 @@
+/* Container Services */
+.blog-section {
+  order: 5;
+  display: flex;
+  background: var(--white);
+  padding: 40px 16px 40px 16px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: auto;
+  gap: 20px;
+}
+
+.header {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-bottom: 12px;
+  outline: none;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  padding-left: 205px;
+  padding-right: 150px;
+  bottom: 0;
+  height: 0.1px;
+  background-color: var(--background-border-color);
+}
+
+.title-container {
+  display: flex;
+  justify-content: start;
+  gap: 15px;
+}
+
+.icon-dog {
+  width: 24px;
+  height: 24px;
+}
+
+.blog-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.blog-title {
+  color: var(--secondary-color);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 44px;
+  letter-spacing: -2%;
+  padding-bottom: 15px;
+  word-wrap: break-word;
+}
+
+.blog-paragraph {
+  display: flex;
+  padding: 10px 0px 10px 0px;
+}
+
+.blog-paragraph p {
+  color: var(--graphite-gray-paragraph);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+
+.blog-subtitle {
+  color: var(--secondary-color);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0%;
+}
+
+.blog-subparagraph {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 15px;
+}
+
+.blog-subparagraph p {
+  color: var(--graphite-gray-paragraph);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+
+.blog-button {
+  margin-top: 25px;
+  text-align: left;
+}
+
+.blog-button button {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 104px;
+  height: 35px;
+  color: var(--white);
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: var(--background-button);
+  border-radius: 5px;
+  outline: 1px #243961 solid;
+  outline-offset: -1px;
+  text-align: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 15px;
+  word-wrap: break-word;
+}
+
+.video-player-wrapper {
+  display: none;
+}
+
+@media (min-width: 1440px) {
+  .blog-section {
+    order: 6;
+    padding: 70px 80px 70px 80px;
+    max-width: 1440px;
+    gap: 64px;
+  }
+
+  .blog-container {
+    display: flex;
+    flex-direction: row;
+    width: 1159px;
+    height: 100%;
+    gap: 64px;
+  }
+
+  .blog-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .blog-title {
+    font-size: 36px;
+    padding-bottom: 48px;
+  }
+
+  .blog-paragraph {
+    display: flex;
+    padding: 32px 0px 32px 0px;
+  }
+
+  .blog-paragraph p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .blog-subtitle {
+    font-size: 24px;
+  }
+
+  .blog-subparagraph {
+    gap: 16px;
+    padding-bottom: 48px;
+  }
+
+  .blog-subparagraph p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .blog-button {
+    margin-top: 30px;
+  }
+
+  .blog-button button {
+    padding: 20px 0px 20px 0px;
+    width: 140px;
+    height: 60px;
+    border-radius: 8px;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    word-wrap: break-word;
+  }
+
+  /* Sessão Video */
+  .video-player-wrapper {
+    display: flex;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .blog-video {
+    width: 100%;
+    height: 609px;
+    object-fit: cover;
+  }
+
+  .custom-play-button {
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    z-index: 2;
+    transition: opacity 0.3s ease, transform 0.2s ease;
+  }
+
+  .custom-play-button svg {
+    width: 140px;
+    height: 140px;
+  }
+}

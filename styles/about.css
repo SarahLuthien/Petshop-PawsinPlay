@@ -1,0 +1,137 @@
+/* Container About */
+.about-section {
+  order: 4;
+  display: flex;
+  background: var(--white);
+  padding: 40px 16px 40px 16px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: auto;
+  gap: 20px;
+}
+
+/* Title Section*/
+
+.header {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-bottom: 12px;
+  outline: none;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  padding-left: 205px;
+  padding-right: 150px;
+  bottom: 0;
+  height: 0.1px;
+  background-color: var(--background-border-color);
+}
+
+.title-container {
+  display: flex;
+  justify-content: start;
+  gap: 15px;
+}
+
+.icon-dog {
+  width: 24px;
+  height: 24px;
+}
+
+.about-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-description p {
+  margin-bottom: 16px;
+}
+
+.conteudo-sobre-nos p:last-child {
+  margin-bottom: 0;
+}
+
+.about-paragraph {
+  color: var(--graphite-gray-paragraph);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 100%;
+  word-wrap: break-word;
+  letter-spacing: 0%;
+}
+
+.about-img {
+  display: none;
+}
+
+@media (min-width: 600px) and (max-width: 1439px) {
+  .about-section {
+    height: 700px;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (min-width: 1440px) {
+  /* Container Shop */
+  .about-section {
+    padding: 70px 80px 70px 80px;
+    gap: 40px;
+    max-width: 1440px;
+  }
+
+  /* Title Section*/
+
+  .header {
+    padding-bottom: 17px;
+  }
+
+  .header::before {
+    padding-left: 1000px;
+    padding-right: 280px;
+  }
+
+  .icon-dog {
+    width: 32px;
+    height: 32px;
+  }
+
+  .about-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 1159px;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    outline: 0.2px var(--background-border-color) solid;
+    outline-offset: -0.2px;
+    margin-left: 60px;
+    padding: 40px 21px 40px 21px;
+  }
+
+  .about-description {
+    padding: 58px 0px 45px 34px;
+  }
+
+  .about-description p {
+    margin-bottom: 19px;
+  }
+
+  .about-paragraph {
+    color: var(--secondary-color);
+    font-size: 21px;
+  }
+
+  .about-img {
+    display: block;
+    padding-right: 28px;
+  }
+}

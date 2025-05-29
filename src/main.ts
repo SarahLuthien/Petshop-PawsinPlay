@@ -149,7 +149,7 @@ function renderProducts(category: string): void {
 }
 renderProducts("random");
 
-// Button Filter
+// Funcionalidade Button Filter
 document.querySelectorAll<HTMLButtonElement>(".filter-btn").forEach((btn) => {
   btn.addEventListener("click", () => {
     const category = btn.id;
@@ -157,7 +157,7 @@ document.querySelectorAll<HTMLButtonElement>(".filter-btn").forEach((btn) => {
   });
 });
 
-/* Adiciona e remove efeito Active nos buttons filter Products */
+// Adiciona e remove efeito de Ativo nos buttons: filter-Products
 const buttons = document.querySelectorAll(".filter-btn");
 
 buttons.forEach((btn) => {
@@ -165,4 +165,49 @@ buttons.forEach((btn) => {
     buttons.forEach((b) => b.classList.remove("active"));
     btn.classList.add("active");
   });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  function setupCustomVideoPlayer(
+    blogVideo: string,
+    blogCustomPlayButton: string
+  ): void {
+    const videoElement = document.getElementById(
+      blogVideo
+    ) as HTMLVideoElement | null;
+
+    const playButtonElement = document.getElementById(
+      blogCustomPlayButton
+    ) as HTMLButtonElement | null;
+
+    if (videoElement && playButtonElement) {
+      videoElement.removeAttribute("controls");
+      playButtonElement.style.display = "block";
+
+      playButtonElement.addEventListener("click", function () {
+        videoElement.play();
+        playButtonElement.style.display = "none";
+        videoElement.setAttribute("controls", "true");
+      });
+
+      // Display volta ao visual e configuração inicial ao finalizar
+      videoElement.addEventListener("ended", function () {
+        playButtonElement.style.display = "block";
+        videoElement.removeAttribute("controls");
+
+        videoElement.load();
+      });
+    } else {
+      if (!videoElement) {
+        console.warn(`Elemento de vídeo com ID '${blogVideo}' não encontrado.`);
+      }
+      if (!playButtonElement) {
+        console.warn(
+          `Botão de play com ID '${blogCustomPlayButton}' não encontrado.`
+        );
+      }
+    }
+  }
+
+  setupCustomVideoPlayer("blogVideo", "blogCustomPlayButton");
 });
