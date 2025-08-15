@@ -1,6 +1,6 @@
 # Paws n' Play - Landing Page para Petshop
 
-![Demonstração do Projeto Paws n' Play](/assets/videos/petshop.mp4)
+![Demonstração do Projeto Paws n' Play](/assets/videos/petshop.gif)
 
 [Clique aqui para ver o projeto ao vivo!](https://petshop-pawsin-play-qfe8wslfu-sara-roberta-pires-s-projects.vercel.app/)
 
