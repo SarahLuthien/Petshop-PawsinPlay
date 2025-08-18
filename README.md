@@ -1,32 +1,50 @@
-# Paws n' Play - Landing Page para Petshop
+# 🐾 Paws n' Play – Landing Page para Petshop
 
 ![Demonstração do Projeto Paws n' Play](/assets/videos/petshop.gif)
 
-[Clique aqui para ver o projeto ao vivo!](https://petshop-pawsin-play-qfe8wslfu-sara-roberta-pires-s-projects.vercel.app/)
+[![Status](https://img.shields.io/badge/status-online-brightgreen)](https://petshop-pawsin-play-qfe8wslfu-sara-roberta-pires-s-projects.vercel.app/)
+![Made with TypeScript](https://img.shields.io/badge/made%20with-TypeScript-3178C6?logo=typescript&logoColor=white)
+![Responsive](https://img.shields.io/badge/responsive-mobile--first-orange)
+![Deploy](https://img.shields.io/badge/deploy-Vercel-black?logo=vercel)
 
-## 🚀 Funcionalidades Principais
+🔗 [**Acesse o projeto ao vivo aqui!**](https://petshop-pawsin-play-qfe8wslfu-sara-roberta-pires-s-projects.vercel.app/)
 
-O projeto é uma página única (SPA - Single Page Application) com diversas seções, incluindo:
+---
 
-- **Navegação Fixa e Responsiva:** Um cabeçalho com menu de navegação que se adapta a diferentes tamanhos de tela, incluindo um menu hambúrguer para dispositivos móveis.
-- **Seção de Produtos:** Exibição de produtos com filtros interativos por categoria (Cães, Gatos, etc.).
-- **Seção de Serviços:** Layout em grid com cards que revelam mais informações ao passar o mouse (efeito hover).
-- **Player de Vídeo Customizado:** Um player de vídeo na seção de blog com um botão de play personalizado.
-- **Formulário de Contato:** Um formulário completo para os usuários enviarem mensagens.
-- **Design Responsivo:** A página foi construída com a abordagem _mobile-first_, garantindo uma ótima experiência em smartphones, tablets e desktops.
+## ✨ Sobre o Projeto  
 
-## 🛠️ Tecnologias Utilizadas
+O **Paws n' Play** é uma landing page moderna e responsiva desenvolvida para um petshop fictício.  
+O objetivo é apresentar produtos e serviços de forma atrativa, oferecendo uma experiência interativa e intuitiva para o usuário.  
 
-Este projeto foi construído utilizando as seguintes tecnologias:
+---
 
-- **HTML5:** Estruturação semântica do conteúdo.
-- **CSS3:** Estilização completa, utilizando conceitos avançados como Flexbox, Grid Layout e Media Queries para responsividade.
-- **TypeScript:** Utilizado para toda a manipulação do DOM, interatividade da página e para garantir a tipagem e a escalabilidade do código.
+## 🚀 Funcionalidades  
 
-## 👩‍💻 Autora
+- ✔️ **Navegação Fixa e Responsiva** – Cabeçalho adaptável com menu hambúrguer no mobile.  
+- ✔️ **Seção de Produtos** – Lista dinâmica com filtros interativos por categoria (Cães, Gatos, etc.).  
+- ✔️ **Seção de Serviços** – Cards em grid com efeito *hover* para exibir detalhes extras.  
+- ✔️ **Player de Vídeo Customizado** – Player exclusivo na seção de blog, com botão *play* estilizado.  
+- ✔️ **Formulário de Contato** – Estrutura completa para envio de mensagens.  
+- ✔️ **Design Responsivo (Mobile-First)** – Totalmente otimizado para smartphones, tablets e desktops.  
 
-Desenvolvido por **Sara Pires**.
+---
 
-- [LinkedIn](https://www.linkedin.com/in/sara-pires-dev)
-- [GitHub](https://github.com/SarahLuthien)
-- [Portfólio](https://portfolio-profissional-sarapires.vercel.app)
+## 🛠️ Tecnologias  
+
+Este projeto foi desenvolvido com as seguintes tecnologias:  
+
+- 🌐 **HTML5** → Estruturação semântica e acessível.  
+- 🎨 **CSS3** → Estilização avançada com **Flexbox**, **Grid Layout** e **Media Queries**.  
+- ⚡ **TypeScript** → Interatividade, tipagem estática e manipulação do DOM.  
+
+---
+
+## 👩‍💻 Autora  
+
+Feito com ❤️ por **Sara Pires**.  
+
+- 🌐 [Portfólio](https://portfolio-profissional-sarapires.vercel.app)  
+- 💼 [LinkedIn](https://www.linkedin.com/in/sara-pires-dev)  
+- 🐙 [GitHub](https://github.com/SarahLuthien)  
+
+---
