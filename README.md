@@ -6,6 +6,7 @@
 ![Made with TypeScript](https://img.shields.io/badge/made%20with-TypeScript-3178C6?logo=typescript&logoColor=white)
 ![Responsive](https://img.shields.io/badge/responsive-mobile--first-orange)
 ![Deploy](https://img.shields.io/badge/deploy-Vercel-black?logo=vercel)
+![Figma](https://img.shields.io/badge/design%20no-Figma-F24E1E?logo=figma)
 
 🔗 [**Acesse o projeto ao vivo aqui!**](https://petshop-pawsin-play-qfe8wslfu-sara-roberta-pires-s-projects.vercel.app/)
 
@@ -36,6 +37,14 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 - 🌐 **HTML5** → Estruturação semântica e acessível.  
 - 🎨 **CSS3** → Estilização avançada com **Flexbox**, **Grid Layout** e **Media Queries**.  
 - ⚡ **TypeScript** → Interatividade, tipagem estática e manipulação do DOM.  
+
+---
+
+## 🎨 Design e Referência
+
+O foco deste projeto foi a implementação do código, a responsividade e a adição de interatividade com TypeScript.
+
+🔗 **[Acesse o template original no Figma](https://www.figma.com/design/cuzj0gnLZdp9czMKNenRa1/Free-responsive-E-commerce-landing-page-template-Desktop---Mobile-%7Bincluding-image%7D--Community-?node-id=0-1&p=f)**
 
 ---
 
