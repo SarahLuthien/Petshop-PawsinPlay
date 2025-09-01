@@ -2,7 +2,7 @@
 .blog-section {
   order: 5;
   display: flex;
-  background: var(--white);
+  background: var(--background-primary);
   padding: 70px 40px;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -18,7 +18,7 @@
 }
 
 .blog-title {
-  color: var(--secondary-color);
+  color: var(--text-primary);
   font-weight: 600;
   font-size: 20px;
   line-height: 44px;
@@ -28,7 +28,7 @@
 }
 
 .blog-title-bottom {
-  border-top: 1px solid #2d37481a;
+  border-top: 1px solid var(--border-blog);
   padding-top: 10px;
   padding-bottom: 0px;
   text-align: center;
@@ -40,7 +40,7 @@
 }
 
 .blog-paragraph p {
-  color: var(--graphite-gray-paragraph);
+  color: var(--text-secondary);
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
@@ -48,7 +48,7 @@
 }
 
 .blog-subtitle {
-  color: var(--secondary-color);
+  color: var(--text-primary);
   font-weight: 600;
   font-size: 20px;
   line-height: 32px;
@@ -63,7 +63,7 @@
 }
 
 .blog-subparagraph p {
-  color: var(--graphite-gray-paragraph);
+  color: var(--text-secondary);
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
@@ -81,14 +81,14 @@
   flex-wrap: nowrap;
   width: 104px;
   height: 35px;
-  color: var(--white);
+  color: var(--text-white);
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
   background: var(--background-button);
   border-radius: 5px;
-  outline: 1px #243961 solid;
+  outline: 1px var(--border-secondary) solid;
   outline-offset: -1px;
   text-align: center;
   justify-content: center;
@@ -130,7 +130,7 @@
   }
 
   .blog-title-bottom {
-    border-top: 1px solid #2d37481a;
+    border-top: 1px solid var(--border-blog);
     padding-top: 24px;
     padding-bottom: 0px;
     text-align: center;
@@ -194,7 +194,7 @@
     top: 43%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: transparent;
+    background: var(--transparent);
     border: none;
     padding: 0;
     cursor: pointer;

@@ -108,26 +108,47 @@ body {
 /* Variáveis de cores */
 
 :root {
-  /* Cores principais */
-  --primary-color: #003049;
-  --secondary-color: #101828;
-  --color-text-secondary-transparent: #10182880;
-  --white: #ffffff;
-  --gray-very-light: #f5f5f5;
-  --gray-light: #f4f4f4;
-  --graphite-gray-paragraph: #667085;
-  --silver: #cecece;
-  --black: rgba(0, 0, 0, 1);
-  --produto-texto: rgba(0, 0, 0, 0.7);
+  /* Cores de Texto */
+  --text-primary: #101828;
+  --text-secondary: #667085;
+  --text-tertiary: #cecece;
+  --text-quaternary: #f4f4f4;
+  --text-white: #ffffff;
+  --text-black: #000000;
   --text-label: #344054;
-  --border-input: #d0d5dd;
-  --background-button: linear-gradient(62deg, #101828 0%, #233250 100%);
-  --background-border-color: rgba(16, 24, 40, 0.151);
-  --background-border-color-white: #ffffff4b;
+  --text-link: #003049;
 
-  /* Sombras */
-  --box-shadow-button: 5px 4px 4px rgba(0, 0, 0, 0.25);
-  --box-shadow-inset-button: 0 0 8px 4px rgba(0, 0, 0, 0.25) inset;
+  /* Cores de Fundo */
+  --background-primary: #ffffff;
+  --background-secondary: #f5f5f5;
+  --background-tertiary: #101828;
+  --background-quaternary: #01254d;
+  --background-button: linear-gradient(62deg, #101828 0%, #233250 100%);
+  --background-button-hover: #1e293b;
+  --background-overlay: rgba(16, 24, 40, 0.54);
+  --background-newsletter-input: #dedede;
+  --background-newsletter-button-hover: #f3f4f6;
+
+  /* Cores de Borda */
+  --border-primary: #d0d5dd;
+  --border-secondary: #243961;
+  --border-tertiary: rgba(16, 24, 40, 0.151);
+  --border-focus: #3b82f6;
+  --border-blog: #2d37481a;
+  --border-footer: #2d3748b6;
+
+  /* Cores de Sombra */
+  --box-shadow-primary: 5px 4px 4px rgba(0, 0, 0, 0.25);
+  --box-shadow-inset: 0 0 8px 4px rgba(0, 0, 0, 0.25) inset;
+  --box-shadow-focus: 0 0 0 3px rgba(59, 130, 246, 0.2);
+
+  /* Outras Cores */
+  --transparent: transparent;
+  --black-transparent-10: rgba(0, 0, 0, 0.1);
+  --black-transparent-50: rgba(0, 0, 0, 0.5);
+  --black-transparent-70: rgba(0, 0, 0, 0.7);
+  --secondary-transparent: #10182880;
+  --footer-nav-link: #e0e0e0;
 }
 
 /* ============================ */
@@ -140,7 +161,7 @@ body {
   justify-content: space-between;
   flex-direction: row;
   padding-bottom: 12px;
-  border-bottom: 1px solid var(--background-border-color);
+  border-bottom: 1px solid var(--border-tertiary);
 }
 
 .title-container {

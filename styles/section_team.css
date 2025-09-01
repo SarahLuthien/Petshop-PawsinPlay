@@ -2,7 +2,7 @@
 .team-section {
   order: 6;
   display: flex;
-  background: var(--white);
+  background: var(--background-primary);
   padding: 70px 40px;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -44,7 +44,7 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 17.56px;
-  color: var(--color-text-secondary-transparent);
+  color: var(--secondary-transparent);
   margin-bottom: 10px;
 }
 
@@ -106,7 +106,7 @@
   .team-member-function {
     font-size: 18px;
     line-height: 28px;
-    color: var(--color-text-secondary-transparent);
+    color: var(--secondary-transparent);
     margin-bottom: 18px;
   }
 

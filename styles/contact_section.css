@@ -2,7 +2,7 @@
 .contact-section {
   order: 7;
   display: flex;
-  background: var(--secondary-color);
+  background: var(--background-tertiary);
   padding: 70px 40px;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -16,7 +16,7 @@
   justify-content: space-between;
   flex-direction: row;
   padding-bottom: 10px;
-  border-bottom: 1px solid var(--white);
+  border-bottom: 1px solid var(--text-white);
 }
 
 .title-container {
@@ -26,7 +26,7 @@
 }
 
 .title-section-contact {
-  color: var(--white);
+  color: var(--text-white);
   font-size: 20px;
   font-weight: 500;
   line-height: 20px;
@@ -77,7 +77,7 @@
 }
 
 .contact-info h4 {
-  color: var(--white);
+  color: var(--text-white);
   font-size: 13.1px;
   font-weight: 600;
   line-height: 19.65px;
@@ -85,7 +85,7 @@
 }
 
 .contact-info p {
-  color: var(--silver);
+  color: var(--text-tertiary);
   font-size: 10.48px;
   font-weight: 400;
   line-height: 15.72px;
@@ -93,7 +93,7 @@
 }
 
 .contact-info a {
-  color: var(--white);
+  color: var(--text-white);
   font-size: 10.48px;
   font-weight: 600;
   line-height: 100%;
@@ -103,7 +103,7 @@
 /* Formulário */
 
 .contact-form-wrapper {
-  background-color: var(--white);
+  background-color: var(--background-primary);
   padding: 26.2px 21px 26.2px 21px;
   border-radius: 10.5px;
 }
@@ -138,15 +138,15 @@
   padding: 7.86px 10.5px 7.86px 10.5px;
   font-size: 12px;
   color: var(--text-label);
-  background-color: var(--white);
-  border: 1px solid var(--border-input);
+  background-color: var(--background-primary);
+  border: 1px solid var(--border-primary);
   border-radius: 5.24px;
   box-sizing: border-box;
 }
 
 .contact-form__input::placeholder,
 .contact-form__textarea::placeholder {
-  color: var(--graphite-gray-paragraph);
+  color: var(--text-secondary);
   font-size: 10.48px;
   font-weight: 400;
   line-height: 15.72px;
@@ -156,8 +156,8 @@
 .contact-form__input:focus,
 .contact-form__textarea:focus {
   outline: none;
-  border-color: #3b82f6;
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+  border-color: var(--border-focus);
+  box-shadow: var(--box-shadow-focus);
 }
 
 .contact-form__textarea {
@@ -175,20 +175,20 @@
   margin-top: 3px;
   width: 13.1px;
   height: 13.1px;
-  border: 1px solid var(--silver);
+  border: 1px solid var(--text-tertiary);
   border-radius: 4px;
-  accent-color: #3b82f6;
+  accent-color: var(--border-focus);
 }
 
 .contact-form__checkbox-label {
   font-size: 10.48px;
-  color: var(--graphite-gray-paragraph);
+  color: var(--text-secondary);
   line-height: 15.72px;
   font-weight: 400;
 }
 
 .contact-form__checkbox-label .contact-form__link {
-  color: var(--graphite-gray-paragraph);
+  color: var(--text-secondary);
   font-weight: 500;
   text-decoration: underline;
 }
@@ -196,18 +196,18 @@
 .contact-form__submit-button {
   width: 100%;
   background: var(--background-button);
-  color: var(--white);
+  color: var(--text-white);
   font-size: 10.48px;
   font-weight: 600;
   padding: 13px 16px 13px 16px;
-  border: 0.66px solid var(--background-border-color);
+  border: 0.66px solid var(--border-tertiary);
   border-radius: 6px;
   cursor: pointer;
   text-align: center;
 }
 
 .contact-form__submit-button:hover {
-  background-color: #1e293b;
+  background-color: var(--background-button-hover);
 }
 
 @media (min-width: 600px) and (max-width: 1439px) {
@@ -278,7 +278,7 @@
   }
 
   .contact-info h4 {
-    color: var(--white);
+    color: var(--text-white);
     font-size: 20px;
     font-weight: 600;
     line-height: 30px;
@@ -286,7 +286,7 @@
   }
 
   .contact-info p {
-    color: var(--silver);
+    color: var(--text-tertiary);
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -294,7 +294,7 @@
   }
 
   .contact-info a {
-    color: var(--white);
+    color: var(--text-white);
     font-size: 16px;
     font-weight: 600;
     line-height: 100%;
@@ -352,9 +352,9 @@
     margin-top: 3px;
     width: 20px;
     height: 20px;
-    border: 1px solid var(--silver);
+    border: 1px solid var(--text-tertiary);
     border-radius: 6px;
-    accent-color: #3b82f6;
+    accent-color: var(--border-focus);
   }
 
   .contact-form__checkbox-label {
@@ -363,7 +363,7 @@
   }
 
   .contact-form__checkbox-label .contact-form__link {
-    color: var(--graphite-gray-paragraph);
+    color: var(--text-secondary);
     font-weight: 500;
     text-decoration: underline;
   }
@@ -371,17 +371,17 @@
   .contact-form__submit-button {
     width: 100%;
     background: var(--background-button);
-    color: var(--white);
+    color: var(--text-white);
     font-size: 16px;
     font-weight: 500;
     padding: 20px 25px 20px 25px;
-    border: 1px solid var(--background-border-color);
+    border: 1px solid var(--border-tertiary);
     border-radius: 8px;
     cursor: pointer;
     text-align: center;
   }
 
   .contact-form__submit-button:hover {
-    background-color: #1e293b;
+    background-color: var(--background-button-hover);
   }
 }

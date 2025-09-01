@@ -2,7 +2,7 @@
 .about-section {
   order: 4;
   display: flex;
-  background: var(--white);
+  background: var(--background-primary);
   padding: 70px 40px;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -25,7 +25,7 @@
 }
 
 .about-paragraph {
-  color: var(--graphite-gray-paragraph);
+  color: var(--text-secondary);
   font-size: 15px;
   font-weight: 400;
   line-height: 100%;
@@ -64,7 +64,7 @@
     max-width: 1280px;
     margin: 0 auto;
     padding: 40px 20px;
-    outline: 0.2px var(--background-border-color) solid;
+    outline: 0.2px var(--border-tertiary) solid;
   }
 
   .about-description {
