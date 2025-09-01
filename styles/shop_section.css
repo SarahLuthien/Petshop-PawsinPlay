@@ -10,39 +10,6 @@
   gap: 20px;
 }
 
-/* Title Section*/
-
-.header {
-  display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
-  padding-bottom: 12px;
-  outline: none;
-}
-
-.header::before {
-  content: "";
-  position: absolute;
-  padding-left: 205px;
-  padding-right: 150px;
-  bottom: 0;
-  height: 0.1px;
-  background-color: var(--background-border-color);
-}
-
-.title-container {
-  display: flex;
-  justify-content: start;
-  gap: 15px;
-}
-
-.icon-dog {
-  width: 24px;
-  height: 24px;
-}
-
 .shop-search-form-mobile {
   display: block;
 }
@@ -312,35 +279,43 @@
 
 @media (min-width: 600px) and (max-width: 1439px) {
   .shop-section {
-    height: 700px;
-    width: auto;
-    background-size: cover;
-    background-position: center;
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+  .shop-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .container-products-list {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 17px;
+    justify-content: center;
+  }
+
+  .title-section {
+    font-size: 25px;
+  }
+
+  .title-products {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 35px;
   }
 }
 
 @media (min-width: 1440px) {
   /* Container Shop */
   .shop-section {
-    padding: 70px 80px 70px 80px;
-    gap: 40px;
-    max-width: 1440px;
-  }
-
-  /* Title Section*/
-
-  .header {
-    padding-bottom: 17px;
-  }
-
-  .header::before {
-    padding-left: 1000px;
-    padding-right: 280px;
-  }
-
-  .icon-dog {
-    width: 32px;
-    height: 32px;
+    display: flex;
+    width: auto;
+    margin: 0 auto;
+    padding: 40px 100px 70px 100px;
+    gap: 64px;
   }
 
   /*Desativa o container e form versão Mobile */
@@ -359,14 +334,13 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
-    width: 1159px;
+    width: 100%;
     height: 100%;
     position: relative;
     overflow: hidden;
     outline: 0.2px var(--background-border-color) solid;
     outline-offset: -0.2px;
-    margin-left: 60px;
-    padding: 40px 21px 40px 21px;
+    padding: 40px 80px 40px 80px;
   }
 
   .products-container-search {

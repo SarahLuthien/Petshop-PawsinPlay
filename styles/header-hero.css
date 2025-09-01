@@ -219,9 +219,9 @@ h1 {
 @media (min-width: 1440px) {
   /* Header  */
   .main-header-hero {
-    max-width: 1440px;
-    background-size: 2030px;
-    height: 895px;
+    width: 100%;
+    background-size: 100%;
+    height: 980px;
     background-repeat: no-repeat;
     background-position: 0% 35%;
     background-image: radial-gradient(

@@ -3,7 +3,7 @@
   order: 7;
   display: flex;
   background: var(--secondary-color);
-  padding: 40px 16px 40px 16px;
+  padding: 70px 40px;
   flex-direction: column;
   flex-wrap: nowrap;
   width: auto;
@@ -12,22 +12,11 @@
 
 .header-contact {
   display: flex;
-  position: relative;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  padding-bottom: 12px;
-  outline: none;
-}
-
-.header-contact::before {
-  content: "";
-  position: absolute;
-  padding-left: 205px;
-  padding-right: 150px;
-  bottom: 0;
-  height: 0.1px;
-  background-color: var(--background-border-color-white);
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--white);
 }
 
 .title-container {
@@ -221,25 +210,30 @@
   background-color: #1e293b;
 }
 
+@media (min-width: 600px) and (max-width: 1439px) {
+  .contact-form-wrapper {
+    align-items: center;
+    padding: auto;
+    max-width: 680px;
+    height: 600px;
+  }
+
+  .contact-form {
+    display: flex;
+    padding-top: 5rem;
+    flex-direction: column;
+    gap: 15.72px;
+    max-width: 690px;
+  }
+}
+
 @media (min-width: 1440px) {
   .contact-section {
+    display: flex;
+    width: auto;
+    margin: 0 auto;
     padding: 70px 80px 70px 80px;
     gap: 64px;
-    max-width: 1440px;
-  }
-
-  .header-contact {
-    padding-bottom: 17px;
-  }
-
-  .header-contact::before {
-    padding-left: 1000px;
-    padding-right: 280px;
-  }
-
-  .icon-dog {
-    width: 32px;
-    height: 32px;
   }
 
   .title-section-contact {
