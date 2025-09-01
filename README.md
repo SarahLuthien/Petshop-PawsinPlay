@@ -14,29 +14,51 @@
 
 ## ✨ Sobre o Projeto  
 
-O **Paws n' Play** é uma landing page moderna e responsiva desenvolvida para um petshop fictício.  
-O objetivo é apresentar produtos e serviços de forma atrativa, oferecendo uma experiência interativa e intuitiva para o usuário.  
+O **Paws n' Play** é uma landing page moderna e totalmente responsiva desenvolvida para um petshop fictício. O projeto foi construído com foco na abordagem **Mobile-First** e tem como objetivo apresentar produtos e serviços de forma atrativa, oferecendo uma experiência de usuário interativa, fluida e intuitiva.
+
+Este projeto demonstra proficiência na conversão de um design do Figma em uma aplicação web funcional, com atenção especial à semântica do HTML, técnicas avançadas de CSS e interatividade robusta com TypeScript.
+
 
 ---
 
-## 🚀 Funcionalidades  
+## 🚀 Principais Recursos e Habilidades
 
-- ✔️ **Navegação Fixa e Responsiva** – Cabeçalho adaptável com menu hambúrguer no mobile.  
-- ✔️ **Seção de Produtos** – Lista dinâmica com filtros interativos por categoria (Cães, Gatos, etc.).  
-- ✔️ **Seção de Serviços** – Cards em grid com efeito *hover* para exibir detalhes extras.  
-- ✔️ **Player de Vídeo Customizado** – Player exclusivo na seção de blog, com botão *play* estilizado.  
-- ✔️ **Formulário de Contato** – Estrutura completa para envio de mensagens.  
-- ✔️ **Design Responsivo (Mobile-First)** – Totalmente otimizado para smartphones, tablets e desktops.  
+*  **Layouts Complexos com Grid e Flexbox:**
+    * Implementação de um grid de serviços assimétrico e responsivo, onde um card de destaque se adapta de forma inteligente: ocupando a largura total no mobile e a altura de duas linhas no desktop, mantendo o alinhamento perfeito com os demais cards.
 
+*  **Renderização Dinâmica com Dados Mockados:**
+    * A seção de produtos é renderizada dinamicamente a partir de um **conjunto de dados simulado (mock)**, estruturado como um array de objetos tipados em **TypeScript**. Isso demonstra a habilidade de manipular estruturas de dados e renderizar elementos no DOM de forma programática.
+      
+*  **Filtragem Interativa de Produtos:** 
+    * Implementação de botões de filtro que manipulam o DOM em tempo real. O usuário pode selecionar categorias específicas (Cães, Gatos, etc.) ou uma seleção aleatória, e a lista de produtos se atualiza instantaneamente sem recarregar a página, tudo gerenciado com TypeScript.
+
+*  **Interatividade com TypeScript:**
+    * Desenvolvimento de componentes interativos, como um **player de vídeo customizado** que exibe uma imagem de capa e um botão de play. Ao ser clicado, o vídeo inicia e os controles nativos do navegador são exibidos dinamicamente.
+
+*  **"Art Direction" Responsiva:**
+    * Uso estratégico do elemento `<picture>` do HTML5 para carregar imagens diferentes e otimizadas para as versões mobile e desktop, melhorando tanto o design visual quanto a performance de carregamento da página.
+
+*  **UI/UX Sofisticado:**
+    * Criação de efeitos de *hover* detalhados para cards e botões, melhorando o feedback visual e o engajamento do usuário.
+
+*  **Navegação Adaptável:**
+    * Cabeçalho fixo e totalmente responsivo, incluindo um menu hambúrguer funcional para dispositivos móveis.
 ---
 
 ## 🛠️ Tecnologias  
 
 Este projeto foi desenvolvido com as seguintes tecnologias:  
 
-- 🌐 **HTML5** → Estruturação semântica e acessível.  
-- 🎨 **CSS3** → Estilização avançada com **Flexbox**, **Grid Layout** e **Media Queries**.  
-- ⚡ **TypeScript** → Interatividade, tipagem estática e manipulação do DOM.  
+-   🌐 **HTML5:** Estruturação semântica e acessível.
+-   🎨 **CSS3:** Estilização avançada com **Flexbox**, **Grid Layout**, **Media Queries** e **Variáveis CSS** para um design consistente.
+-   ⚡ **TypeScript:** Tipagem estática, interatividade, manipulação do DOM e lógica de componentes.
+-   🐙 **Git & GitHub:** Controle de versão seguindo a convenção de **Conventional Commits**.
+
+---
+
+## 🔮 Próximos Passos
+
+O front-end atualmente consome dados de uma fonte simulada. A próxima fase do projeto é substituir o mock por uma **API RESTful externa real** para tornar a seção de produtos totalmente dinâmica.
 
 ---
 
