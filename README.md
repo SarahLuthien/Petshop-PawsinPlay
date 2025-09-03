@@ -8,7 +8,7 @@
 ![Deploy](https://img.shields.io/badge/deploy-Vercel-black?logo=vercel)
 ![Figma](https://img.shields.io/badge/design%20no-Figma-F24E1E?logo=figma)
 
-🔗 [**Acesse o projeto ao vivo aqui!**](https://petshop-pawsin-play-qfe8wslfu-sara-roberta-pires-s-projects.vercel.app/)
+🔗 [**Acesse o projeto ao vivo aqui!**](https://petshop-pawsin-play.vercel.app/)
 
 ---
 
