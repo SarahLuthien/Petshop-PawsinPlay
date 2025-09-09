@@ -220,10 +220,10 @@ h1 {
   /* Header  */
   .main-header-hero {
     width: 100%;
-    background-size: 100%;
+    background-size: cover;
     height: 980px;
     background-repeat: no-repeat;
-    background-position: 0% 35%;
+    background-position: center 25%;
     background-image: radial-gradient(
         ellipse 25% 100% at 50% 50%,
         var(--transparent) 0%,
