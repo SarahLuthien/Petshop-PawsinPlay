@@ -3,6 +3,7 @@ const menuButton = document.getElementById("menuButton");
 const menu = document.querySelector(".nav-menu");
 menuButton.addEventListener("click", () => {
     menu.classList.toggle("active");
+    menuButton.classList.toggle("active");
 });
 window.addEventListener("scroll", navbarFixedOnScroll);
 function navbarFixedOnScroll() {
@@ -91,7 +92,7 @@ function renderProducts(category) {
     }
     container.innerHTML = filtered
         .map((product) => {
-        if (!product.imageUrl) {
+        if (!product.imageUrl || !product.name) {
             return `<div class="product-card out-of-stock">
                   <p>Produto indisponível</p>
                 </div>`;
@@ -122,18 +123,13 @@ function renderProducts(category) {
 }
 renderProducts("random");
 // Funcionalidade Button Filter
-document.querySelectorAll(".filter-btn").forEach((btn) => {
+const filterButtons = document.querySelectorAll(".filter-btn");
+filterButtons.forEach((btn) => {
     btn.addEventListener("click", () => {
+        filterButtons.forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
         const category = btn.id;
         renderProducts(category);
-    });
-});
-// Adiciona e remove efeito de Ativo nos buttons: filter-Products
-const buttons = document.querySelectorAll(".filter-btn");
-buttons.forEach((btn) => {
-    btn.addEventListener("click", () => {
-        buttons.forEach((b) => b.classList.remove("active"));
-        btn.classList.add("active");
     });
 });
 document.addEventListener("DOMContentLoaded", function () {
@@ -165,5 +161,30 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
     setupCustomVideoPlayer("blogVideo", "blogCustomPlayButton");
+});
+const navFilterLinks = document.querySelectorAll(".nav-shop-filter a");
+navFilterLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
+        // Pega a categoria'data-category'
+        const category = link.dataset.category;
+        if (category) {
+            renderProducts(category);
+            // Simula o clique no botão de filtro
+            const correspondingButton = document.getElementById(category);
+            if (correspondingButton) {
+                // Remove a classe 'active'
+                document
+                    .querySelectorAll(".filter-btn")
+                    .forEach((btn) => btn.classList.remove("active"));
+                // Adiciona a classe 'active' ao botão selecionado
+                correspondingButton.classList.add("active");
+            }
+            // Fecha menu para mobile
+            const menu = document.querySelector(".nav-menu");
+            if (menu && menu.classList.contains("active")) {
+                menu.classList.remove("active");
+            }
+        }
+    });
 });
 //# sourceMappingURL=main.js.map

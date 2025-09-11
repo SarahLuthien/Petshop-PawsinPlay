@@ -112,6 +112,7 @@
   flex-direction: column;
   gap: 17px;
   align-items: center;
+  min-width: 370px;
 }
 
 .product-card {
@@ -283,18 +284,21 @@
     height: 100%;
     width: 100%;
   }
+
   .shop-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
 
   .container-products-list {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: row;
     gap: 17px;
     justify-content: center;
+    max-width: 980px;
   }
 
   .title-section {
@@ -451,6 +455,7 @@
     flex-direction: row;
     gap: 17px;
     justify-content: center;
+    min-width: 1100px;
   }
 
   .product-card {

@@ -211,19 +211,35 @@
 }
 
 @media (min-width: 600px) and (max-width: 1439px) {
-  .contact-form-wrapper {
+  .contact-container {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    padding: auto;
+    gap: 40px;
+  }
+
+  .contact-container-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
     max-width: 680px;
-    height: 600px;
+  }
+
+  .contact-form-wrapper {
+    width: 100%;
+    max-width: 680px;
+    box-sizing: border-box;
   }
 
   .contact-form {
     display: flex;
-    padding-top: 5rem;
     flex-direction: column;
-    gap: 15.72px;
-    max-width: 690px;
+    gap: 20px;
+  }
+
+  .title-section-contact {
+    font-size: 25px;
   }
 }
 
